@@ -3,7 +3,7 @@ from flask_cors import CORS
 import pickle
 import numpy as np
 
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('backend/model.pkl', 'rb'))  # Updated path
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS
